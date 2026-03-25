@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu_Corrinho_de_compras</title>
+    <link rel="stylesheet" href="style_Crarinho.css">
+</head>
+<body>
+     <header>
+        <img class="logo" src="Gemini_Generated_Image_b4egb7b4egb7b4eg-removebg-preview.png" alt="logo">
+
+        <div class="barra_de_pesquisa">
+            <input type="text" id="inputBusca" placeholder="Procurar PC gamer..." onkeyup="filtrarProdutos()">
+            <button type="button" onclick="irParaResultados()">
+                <img src="icons8-search-48.png" alt="">
+            </button>
+        </div>
+
+    
+    </header>
+
+     <div class="header1">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index_Gabinetes.html">Gabinetes</a></li>
+            <li><a href="index_Componentes.html">Componentes</a></li>
+            <li><a href="index_acessório.html">Acessórios</a></li>
+            <li><a href="index_Carrinho.html">Seu Carrinho</a></li>
+        </ul>
+    </div>
+
+    <div class="voltar_home">
+        <a href="index.html">Voltar para a pagina inicial</a>
+    </div>
+
+    <div class="interface_Carrinho">
+        <aside id="carrinho">
+            <div class="carrinho">
+                <div class="carrinho_titulo">
+                    <h2>Seu Carrinho 🛒</h2>
+                </div>
+                <ul id="itensCarrinho">
+                    </ul>
+                <p><strong>Total: R$ <span id="valorTotal">0.00</span></strong></p>
+                <p><strong>Produtos no Carrinho: <span id="contador-carrinho">0</span></strong></p>
+                <button onclick="limparCarrinho()">Esvaziar Carrinho</button>
+            </div>
+
+            <div class="checkout">
+                <button id="checkout" class="btn">Finalizar Compra</button>
+            </div>
+
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+        <div class="footer-section">
+            <h4>Seções</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Redes Sociais</h4>
+            <ul>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: contato@exemplo.com</p>
+            <p>Telefone suporte: (11) 1234-5678</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Coisa De GAMER. Todos os direitos reservados.</p>
+    </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
