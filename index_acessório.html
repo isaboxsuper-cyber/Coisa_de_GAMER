@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoisaDeGamer_Acessórios_GAMER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Gemini_Generated_Image_b4egb7b4egb7b4eg-removebg-preview.png" alt="logo">
+        
+        <div class="barra_de_pesquisa">
+            <input type="text" id="inputBusca" placeholder="Procurar PC gamer..." onkeyup="filtrarProdutos()">
+            <button type="button"><img src="icons8-search-48.png" alt=""></button>
+        </div>
+       
+    </header>
+
+     <div class="header1">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index_Gabinetes.html">Gabinetes</a></li>
+            <li><a href="index_Componentes.html">Componentes</a></li>
+            <li><a href="index_acessório.html">Acessórios</a></li>
+            <li><a href="index_Carrinho.html">Seu Carrinho</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+
+        <div id="mensagemNaoEncontrado" style="display: none; text-align: center; width: 100%; padding: 50px; grid-column: 1 / -1;">
+                <h2 style="color: #666;">Vish! Não encontramos nenhum PC ou peça com esse nome. 😅</h2>
+                <p>Tente novamente.</p>
+            </div>
+
+            <!-- item B-1 -->
+            <div class="produto">
+                <h2>Cadeira GAMER CG-601</h2>
+                <img src="https://cdn.awsli.com.br/2500x2500/524/524499/produto/226157474/cadeira-gamer-hoopson-cg-601-a-17ixpo6272.jpg" alt="foto do produto">
+                <p>Cadeira muito confortavel!</p>
+                <h3>R$ 1.089,00</h3>
+
+                <button type="button" onclick="adicionarAoCarrinho(this, 'Cadeira GAMER CG-601', 1089)">Comprar</button>
+            </div>
+
+            <!-- item B-2 -->
+            <div class="produto">
+                <h2>Cadeira Gamer Gp Office</h2>
+                <img src="https://cdn.awsli.com.br/1804/1804030/produto/86273598/b5af7ba40f.jpg" alt="foto do produto">
+                <p>Outra cadeira muito confortavel!</p>
+                <h3>R$ 635,00</h3>
+
+                <button type="button" onclick="adicionarAoCarrinho(this, 'Cadeira GAMER CG-601Cadeira Gamer Gp Office', 635)">Comprar</button>
+            </div>
+
+            <!-- item B-3 -->
+            <div class="produto">
+                <h2>Cadeira Gamer Fox Racer Rgb</h2>
+                <img src="https://americanas.vtexassets.com/arquivos/ids/31393487-768-auto/Cadeira-Gamer-Fox-Racer-RGB-com-Iluminacao-Led-Preta-UT-C1583L.webp?v=638834344166870000&quality=9" alt="foto do produto">
+                <p>Outra cadeira muito confortavel!</p>
+                <h3>R$ 1.700,00</h3>
+
+                <button type="button" onclick="adicionarAoCarrinho(this, 'Cadeira Gamer Fox Racer Rgb', 1700)">Comprar</button>
+            </div>
+
+            <!-- item B-4 -->
+            <div class="produto">
+                <h2>Cadeira Gamer Escorpião</h2>
+                <img src="https://ae01.alicdn.com/kf/Sf24dbaac926e4d96a9f45bc71824d8b6D.jpg" alt="foto do produto">
+                <p>Apenas para GAMERS de verdade!</p>
+                <h3>R$ 1.300.500,00</h3>
+
+                <button type="button" onclick="adicionarAoCarrinho(this, 'Cadeira Gamer Escorpião', 1300500)">Comprar</button>
+            </div>
+
+            <!-- item B-5 -->
+            <div class="produto">
+                <h2>Fone Headset Gamer JBL</h2>
+                <img src="https://mirandacomputacao.jetassets.com.br/produto/49177-principal.png" alt="foto do produto">
+                <p>Um fone de ouvido</p>
+                <h3>R$ 209,00</h3>
+
+                <button type="button" onclick="adicionarAoCarrinho(this, 'Fone Headset Gamer JBL', 209)">Comprar</button>
+            </div>
+
+             <!-- item B-6 -->
+            <div class="produto">
+                <h2>Fone de Ouvido RGB sem fio</h2>
+                <img src="https://www.logitechstore.com.br/media/catalog/product/cache/105e6f420716e0751863c4b81f527d17/l/o/logitech098.png" alt="foto do produto">
+                <p>Um fone de ouvido</p>
+                <h3>R$ 250,00</h3>
+
+                <button type="button" onclick="adicionarAoCarrinho(this, 'Fone de Ouvido RGB sem fio', 250)">Comprar</button>
+            </div>
+
+             <!-- item B-7 -->
+            <div class="produto">
+                <h2>Headphone Gamer Escorpião</h2>
+                <img src="https://images.tcdn.com.br/img/img_prod/406359/headphone_gamer_para_ps4_pc_celular_com_microfone_articulado_led_rgb_7_cores_almofada_extra_macia_gh_2781_1_fc011894f2d7616f79077d57564e82eb_20220707114640.jpeg" alt="foto do produto">
+                <p>Um fone de ouvido</p>
+                <h3>R$ 330,00</h3>
+
+                <button type="button" onclick="adicionarAoCarrinho(this, 'Headphone Gamer Escorpião', 330)">Comprar</button>
+            </div>
+
+            
+    </div>
+
+      <aside id="carrinho">
+        <div class="carrinho">
+            <div class="carrinho_titulo">
+                <h2>Seu Carrinho 🛒</h2>
+            </div>
+            <ul id="itensCarrinho">
+                </ul>
+            <p><strong>Total: R$ <span id="valorTotal">0.00</span></strong></p>
+            <p><strong>Produtos no Carrinho: <span id="contador-carrinho">0</span></strong></p>
+            <button onclick="limparCarrinho()">Esvaziar Carrinho</button>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-container">
+        <div class="footer-section">
+            <h4>Seções</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Redes Sociais</h4>
+            <ul>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: contato@exemplo.com</p>
+            <p>Telefone suporte: (11) 1234-5678</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Coisa De GAMER. Todos os direitos reservados.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

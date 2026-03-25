@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoisaDeGamer_Gabinetes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Gemini_Generated_Image_b4egb7b4egb7b4eg-removebg-preview.png" alt="logo">
+        
+        <div class="barra_de_pesquisa">
+            <input type="text" id="inputBusca" placeholder="Procurar PC gamer..." onkeyup="filtrarProdutos()">
+            <button type="button"><img src="icons8-search-48.png" alt=""></button>
+        </div>
+       
+    </header>
+
+    <div class="header1">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index_Gabinetes.html">Gabinetes</a></li>
+            <li><a href="index_Componentes.html">Componentes</a></li>
+            <li><a href="index_acessório.html">Acessórios</a></li>
+            <li><a href="index_Carrinho.html">Seu Carrinho</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+
+        <div id="mensagemNaoEncontrado" style="display: none; text-align: center; width: 100%; padding: 50px; grid-column: 1 / -1;">
+                <h2 style="color: #666;">Vish! Não encontramos nenhum PC ou peça com esse nome. 😅</h2>
+                <p>Tente novamente.</p>
+            </div>
+
+                <!-- item 1 -->
+                <div class="produto">
+                    <h2>PC Gamer Completo Intel Core</h2>
+                    <img src="https://cdn.awsli.com.br/2500x2500/2547/2547358/produto/239414461/9738---pc-gamer-i5-12400f---monitor-24---tec--2--athtchx6c9.jpg" alt="foto do produto">
+                    <p>Um dos computadores já feitos.</p>
+                    <h3>R$ 3.700,00</h3>
+
+                    <label>Memoria Ram</label>
+                    <select name="" id="">
+                        <option value="0|8gb">8gb (+R$ 0)</option>
+                        <option value="200|16gb">16gb (+R$ 200)</option>
+                        <option value="400|32gb">32gb (+R$ 400)</option>
+                    </select>
+
+                    <label>Processador</label>
+                    <select name="" id="">
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                    </select>
+
+                    <label>GPU</label>
+                    <select name="" id="">
+                        <option value="500|RTX-3060">RTX-3060 (+R$ 500)</option>
+                        <option value="800|RTX-3090">RTX-3090 (+R$ 800)</option>
+                    </select>
+
+                    <button type="button" onclick="adicionarAoCarrinho(this, 'PC Intel', 3700)">Comprar</button>
+                </div>
+            
+
+
+                <!-- item 2 -->
+                <div class="produto">
+                    <h2>Pc Gamer Completo Amd Ryzen</h2>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_742542-MLU74460401893_022024-O.webp" alt="foto do produto">
+                    <p>Outro dos computadores já feitos.</p>
+                    <h3>R$ 4.050,99</h3>
+
+                    <label>Memoria Ram</label>
+                    <select name="" id="">
+                        <option value="0|8gb">8gb (+R$ 0)</option>
+                        <option value="200|16gb">16gb (+R$ 200)</option>
+                        <option value="400|32gb">32gb (+R$ 400)</option>
+                    </select>
+
+                    <label>Processador</label>
+                    <select name="" id="">
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                    </select>
+
+                    <label>GPU</label>
+                    <select name="" id="">
+                        <option value="500|RTX-3060">RTX-3060 (+R$ 500)</option>
+                        <option value="800|RTX-3090">RTX-3090 (+R$ 800)</option>
+                    </select>
+
+                    <button type="button" onclick="adicionarAoCarrinho(this, 'PC Ryzen', 4051)">Comprar</button>
+                </div>
+
+                   <!-- item 6 -->
+                <div class="produto">
+                    <h2>PC Gamer Ryzen white 5 5600GT </h2>
+                    <img src="https://cdn.awsli.com.br/600x1000/165/165970/produto/245550171/kit-branco-com-reddragon-fdcmpdtpfl.png" alt="foto do produto">
+                    <p>Um super PC!</p>
+                    <h3>R$ 4.689,99</h3>
+
+                    <label>Memoria Ram</label>
+                    <select name="" id="">
+                        <option value="0|8gb">8gb (+R$ 0)</option>
+                        <option value="200|16gb">16gb (+R$ 200)</option>
+                        <option value="400|32gb">32gb (+R$ 400)</option>
+                        <option value="800|129gb">129gb (+R$ 800)</option>
+                    </select>
+
+                    <label>Processador</label>
+                    <select name="" id="">
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                        <option value="Core">Core</option>
+                        <option value="Ryzen">Ryzen</option>
+                    </select>
+
+                    <label>GPU</label>
+                    <select name="" id="">
+                        <option value="500|RTX-3060">RTX-3060 (+R$ 500)</option>
+                        <option value="800|RTX-3090">RTX-3090 (+R$ 800)</option>
+                        <option value="1200|RTX-4090">RTX-4090 (+R$ 1200)</option>
+                        <option value="1800|RTX-5060">RTX-5060 (+R$ 1800)</option>
+                        <option value="2400|RTX-5090">RTX-5090 (+R$ 2400)</option>
+                    </select>
+
+                    <button type="button" onclick="adicionarAoCarrinho(this, 'PC Gamer Ryzen white', 4689.99)">Comprar</button>
+                </div>
+
+                  <!-- item 7 -->
+                <div class="produto">
+                    <h2>Pc Gamer Completo Ryzen 5 black </h2>
+                    <img src="https://cdn.dooca.store/559/products/pc-gamer-completo-enifler-124-huu89_640x640+fill_ffffff.png?v=1772568430&webp=0" alt="foto do produto">
+                    <p>Um super PC!</p>
+                    <h3>R$ 3.6529,09</h3>
+
+                    <label>Memoria Ram</label>
+                    <select name="" id="">
+                        <option value="0|8gb">8gb (+R$ 0)</option>
+                        <option value="200|16gb">16gb (+R$ 200)</option>
+                        <option value="400|32gb">32gb (+R$ 400)</option>
+                        <option value="800|129gb">129gb (+R$ 800)</option>
+                    </select>
+
+                    <label>Processador</label>
+                    <select name="" id="">
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                        <option value="Core">Core</option>
+                        <option value="Ryzen">Ryzen</option>
+                    </select>
+
+                    <label>GPU</label>
+                    <select name="" id="">
+                        <option value="500|RTX-3060">RTX-3060 (+R$ 500)</option>
+                        <option value="800|RTX-3090">RTX-3090 (+R$ 800)</option>
+                        <option value="1200|RTX-4090">RTX-4090 (+R$ 1200)</option>
+                        <option value="1800|RTX-5060">RTX-5060 (+R$ 1800)</option>
+                        <option value="2400|RTX-5090">RTX-5090 (+R$ 2400)</option>
+                    </select>
+
+                    <button type="button" onclick="adicionarAoCarrinho(this, 'Pc Gamer Completo Ryzen 5 black', 3529.09)">Comprar</button>
+                </div>
+            
+
+                    <!-- item 3 -->
+                <div class="produto">
+                    <h2>Computador de velho</h2>
+                    <img src="https://static.todamateria.com.br/upload/co/mp/computadorquartageracao.jpg" alt="foto do produto">
+                    <p>Esse ai é pre-histórico</p>
+                    <h3>R$ 566,90</h3>
+
+                    <label>Memoria Ram</label>
+                    <select name="" id="">
+                        <option value="0|8gb">8gb (+R$ 0)</option>
+                        <option value="200|16gb">16gb (+R$ 200)</option>
+                        <option value="400|32gb">32gb (+R$ 400)</option>
+                    </select>
+
+                    <label>Processador</label>
+                    <select name="" id="">
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                    </select>
+
+                    <label>GPU</label>
+                    <select name="" id="">
+                        <option value="500|RTX-3060">RTX-3060 (+R$ 500)</option>
+                        <option value="800|RTX-3090">RTX-3090 (+R$ 800)</option>
+                    </select>
+
+                    <button type="button" onclick="adicionarAoCarrinho(this, 'Computador de velho', 567)">Comprar</button>
+                </div>
+            
+
+                    <!-- item 4 -->
+                <div class="produto">
+                    <h2>Computador da Hello Kitty</h2>
+                    <img src="https://m.media-amazon.com/images/I/61AKtCUlHoL._AC_UF894,1000_QL80_.jpg" alt="foto do produto">
+                    <p>O melhor pc do mundo!!</p>
+                    <h3>R$ 15.600,00</h3>
+
+                    <label>Memoria Ram</label>
+                    <select name="" id="">
+                        <option value="0|8gb">8gb (+R$ 0)</option>
+                        <option value="200|16gb">16gb (+R$ 200)</option>
+                        <option value="400|32gb">32gb (+R$ 400)</option>
+                        <option value="800|129gb">129gb (+R$ 800)</option>
+                    </select>
+
+                    <label>Processador</label>
+                    <select name="" id="">
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                        <option value="2300|processador atômico">processador atômico (+R$ 2300)</option>
+                    </select>
+
+                    <label>GPU</label>
+                    <select name="" id="">
+                        <option value="500|RTX-3060">RTX-3060 (+R$ 500)</option>
+                        <option value="800|RTX-3090">RTX-3090 (+R$ 800)</option>
+                        <option value="1200|RTX-4999">RTX-4999 (+R$ 1200)</option>
+                    </select>
+
+                    <button type="button" onclick="adicionarAoCarrinho(this, 'PC Hello Kitty', 15600)">Comprar</button>
+                </div>
+            
+
+                    <!-- item 5 -->
+                <div class="produto">
+                    <h2>Computador da NASA</h2>
+                    <img src="Gemini_Generated_Image_c05osgc05osgc05o.png" alt="foto do produto">
+                    <p>??????????</p>
+                    <h3>R$ x.xxx,xx</h3>
+
+                    <label>Memoria Ram</label>
+                    <select name="" id="">
+                        <option value="0|8gb">8gb (+R$ 0)</option>
+                        <option value="200|16gb">16gb (+R$ 200)</option>
+                        <option value="400|32gb">32gb (+R$ 400)</option>
+                        <option value="800|129gb">129gb (+R$ 800)</option>
+                        <option value="0|100000000000000000000gb">100000000000000000000gb</option>
+                    </select>
+
+                    <label>Processador</label>
+                    <select name="" id="">
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                        <option value="processador de ante-materia">processador de ante-materia</option>
+                    </select>
+
+                    <label>GPU</label>
+                    <select name="" id="">
+                        <option value="500|RTX-3060">RTX-3060 (+R$ 500)</option>
+                        <option value="800|RTX-3090">RTX-3090 (+R$ 800)</option>
+                        <option value="1200|RTX-4999">RTX-4999 (+R$ 1200)</option>
+                        <option value="RTXWJTIAI-?????????">RTXWJTIAI-?????????</option>
+                    </select>
+
+                    <button type="button" onclick="adicionarAoCarrinho(this, 'PC da NASA', 100000000)">Comprar</button>
+                </div>
+
+                
+    </div>
+
+      <aside id="carrinho">
+        <div class="carrinho">
+            <div class="carrinho_titulo">
+                <h2>Seu Carrinho 🛒</h2>
+            </div>
+            <ul id="itensCarrinho">
+                </ul>
+            <p><strong>Total: R$ <span id="valorTotal">0.00</span></strong></p>
+            <p><strong>Produtos no Carrinho: <span id="contador-carrinho">0</span></strong></p>
+            <button onclick="limparCarrinho()">Esvaziar Carrinho</button>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-container">
+        <div class="footer-section">
+            <h4>Seções</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Redes Sociais</h4>
+            <ul>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: contato@exemplo.com</p>
+            <p>Telefone suporte: (11) 1234-5678</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Coisa De GAMER. Todos os direitos reservados.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

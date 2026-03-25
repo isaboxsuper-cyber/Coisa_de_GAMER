@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoisaDeGamer_componentes_de_PC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Gemini_Generated_Image_b4egb7b4egb7b4eg-removebg-preview.png" alt="logo">
+        
+        <div class="barra_de_pesquisa">
+            <input type="text" id="inputBusca" placeholder="Procurar PC gamer..." onkeyup="filtrarProdutos()">
+            <button type="button"><img src="icons8-search-48.png" alt=""></button>
+        </div>
+       
+    </header>
+
+    <div class="header1">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index_Gabinetes.html">Gabinetes</a></li>
+            <li><a href="index_Componentes.html">Componentes</a></li>
+            <li><a href="index_acessório.html">Acessórios</a></li>
+            <li><a href="index_Carrinho.html">Seu Carrinho</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+
+        <div id="mensagemNaoEncontrado" style="display: none; text-align: center; width: 100%; padding: 50px; grid-column: 1 / -1;">
+                <h2 style="color: #666;">Vish! Não encontramos nenhum PC ou peça com esse nome. 😅</h2>
+                <p>Tente novamente.</p>
+            </div>
+
+         <!-- item c-1 -->
+        <div class="produto">
+            <h2>Monitor LCD 221V8L/57 | Philips</h2>
+            <img src="https://images.philips.com/is/image/philipsconsumer/19d5dc238a31498282ddb01c00ffd429?wid=700&hei=700&$pnglarge$" alt="foto do produto">
+            <p>Monitor confiavel</p>
+            <h3>R$ 570,90</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Monitor Philips', 570.90)">Comprar</button>
+        </div>
+
+        <!-- item c-5 -->
+        <div class="produto">
+            <h2>Monitor Samsung SyncMaster</h2>
+            <img src="https://images.tcdn.com.br/img/img_prod/1114520/monitor_samsung_syncmaster_933sn_plus_18_5_lcd_vga_8919_1_406e2ad5d47c3bbf22a519a1e52f30ee.jpg" alt="foto do produto">
+            <p>Monitor confiavel</p>
+            <h3>R$ 225,90</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Monitor Samsung SyncMaster', 225.90)">Comprar</button>
+        </div>
+
+        <!-- item c-6 -->
+        <div class="produto">
+            <h2>Monitor Gamer PCFort T2701</h2>
+            <img src="https://images.tcdn.com.br/img/img_prod/740836/monitor_gamer_pcfort_t2701_165_27_led_full_hd_165hz_display_port_hdmi_dvi_vesa_13891_1_41f110c369e18c77abe42f0bfbe24480.jpg" alt="foto do produto">
+            <p>Monitor confiavel</p>
+            <h3>R$ 870,90</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Monitor Gamer PCFort T2701', 870.90)">Comprar</button>
+        </div>
+
+        <!-- item c-7 -->
+        <div class="produto">
+            <h2>Monitor 4k QD-OLED de 32"</h2>
+            <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/aw-series/aw3225qf/pdp/monitor-alienware-aw3225qf-hero.psd?fmt=jpg&wid=756&hei=525" alt="foto do produto">
+            <p>Monitor confiavel</p>
+            <h3>R$ 1079,99</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Monitor 4k QD-OLED', 1079.99)">Comprar</button>
+        </div>
+
+        <!-- item c-8 -->
+        <div class="produto">
+            <h2>Monitor Gamer Asus ROG Strix</h2>
+            <img src="https://www.gigantec.com.br/media/catalog/product/m/o/monitor-gamer-asus-rog-strix-xg49vq-01.jpg" alt="foto do produto">
+            <p>Monitor confiavel</p>
+            <h3>R$ 6.614,91</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Monitor Gamer Asus ROG Strix', 6614.91)">Comprar</button>
+        </div>
+
+
+         <!-- item c-2 -->
+        <div class="produto">
+            <h2>Teclado Usb Preto Office 015-00415+</h2>
+            <img src="https://images.tcdn.com.br/img/img_prod/1140357/teclado_office_5_usb_preto_015_0041_2695_1_823434322d99695e87ff1b48e1359122.jpg" alt="foto do produto">
+            <p>Teclado confiavel</p>
+            <h3>R$ 199,90</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Teclado Usb', 199.90)">Comprar</button>
+        </div>
+
+        <!-- item c-3 -->
+        <div class="produto">
+            <h2>Teclado Mecânico Gamer KBM! Gaming TG600, Preto</h2>
+            <img src="https://images.kabum.com.br/produtos/fotos/472044/teclado-mecanico-gamer-kbm-gaming-tg600-preto-60-e-abnt2-rgb-switch-gateron-blue-kgtg600ptaz_1709825264_gg.jpg" alt="foto do produto">
+            <p>Teclado super confiavel!</p>
+            <h3>R$ 299,90</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Teclado Mecânico', 299.99)">Comprar</button>
+        </div>
+
+        <!-- item c-9 -->
+        <div class="produto">
+            <h2>Teclado Gamer Viper Pro</h2>
+            <img src="https://gazin-images.gazin.com.br/E9FyWd-sNdE0DL22dzrJ9TevIy0=/1920x/filters:format(webp):quality(75)/https://gazin-marketplace.s3.amazonaws.com/midias/imagens/2024/02/teclado-gamer-viper-pro-mamba-mecanico-blue-switch-com-rgb-abnt2-092402502617.jpg" alt="foto do produto">
+            <p>Teclado super confiavel!</p>
+            <h3>R$ 368,50</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Teclado Gamer Viper Pro', 368.50)">Comprar</button>
+        </div>
+
+        <!-- item c-10 -->
+        <div class="produto">
+            <h2>Teclado Gamer Mecânico Goldentec GT Moon</h2>
+            <img src="https://lojagoldentec.vteximg.com.br/arquivos/ids/168149-1000-1000/teclado-gamer-gt-moon-branco-rgb-001-min.jpg?v=638866218766970000" alt="foto do produto">
+            <p>Teclado super confiavel!</p>
+            <h3>R$ 650,00</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Teclado Gamer Goldentec GT Moon', 650)">Comprar</button>
+        </div>
+
+         <!-- item c-4 -->
+        <div class="produto">
+            <h2>Placa de Vídeo RTX 4060 8GB</h2>
+            <img src="https://images.tcdn.com.br/img/img_prod/921760/placa_de_video_rtx_4060_8gb_529_1_5ecbf0f9124c6badcd3a2ddd92535dfa.jpg" alt="foto do produto">
+            <p>top d+</p>
+            <h3>R$ 5.900,90</h3>
+
+            <button type="button" onclick="adicionarAoCarrinho(this, 'Placa de Vídeo RTX 4060', 5900.90)">Comprar</button>
+        </div>
+    </div>
+
+    <aside id="carrinho">
+        <div class="carrinho">
+            <div class="carrinho_titulo">
+                <h2>Seu Carrinho 🛒</h2>
+            </div>
+            <ul id="itensCarrinho">
+                </ul>
+            <p><strong>Total: R$ <span id="valorTotal">0.00</span></strong></p>
+            <p><strong>Produtos no Carrinho: <span id="contador-carrinho">0</span></strong></p>
+            <button onclick="limparCarrinho()">Esvaziar Carrinho</button>
+        </div>
+    </aside>
+
+
+    <footer>
+        <div class="footer-container">
+        <div class="footer-section">
+            <h4>Seções</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Redes Sociais</h4>
+            <ul>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: contato@exemplo.com</p>
+            <p>Telefone suporte: (11) 1234-5678</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Coisa De GAMER. Todos os direitos reservados.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
